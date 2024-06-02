@@ -174,6 +174,7 @@ a:hover {
   z-index: 1;
   display: inline-block;
   transition: all .3s cubic-bezier(.645,.045,.355,1);
+  height: 30px;
 }
 
 .custom-link::after {
@@ -386,8 +387,10 @@ strong {
   width: 100%;
   height: 100%;
   max-height: 635px;
-  min-height: 475px;
+  min-height: 300px;
   object-fit: cover;
+  width: 700px;
+  height: 500px;
 }
 
 .team-thumb {
@@ -442,6 +445,7 @@ strong {
 
 .news-thumb {
   position: relative;
+  width: fit-content;
 }
 
 .news-category {
@@ -475,6 +479,7 @@ strong {
 .portfolio-image,
 .news-image {
   display: block;
+margin:auto;
   transition: transform 0.6s ease-out;
 }
 
@@ -594,7 +599,7 @@ strong {
 .site-footer {
   background: var(--dark-color);
   padding-top: 4.5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2rem;
 }
 
 .site-footer .custom-link {
@@ -754,7 +759,36 @@ strong {
 }
 
 .stl{
-  height: 270px;
-  width: 280px;
+  height: 240px;
+  width: 200px;
  
+}
+.logo-img {
+  max-width: 100%; /* Ensures the logo fits within its container */
+  height: 200px; /* Maintains aspect ratio */
+  width: 250px;
+  margin-top: 20px; /* Adds space above the logo */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding-right: 60px;
+  padding-left: 160px;
+}
+
+.contact-info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
+.contact-info p {
+  margin-bottom: 10px;
+}
+.contact-info a {
+  color: inherit; /* Inherits link color */
+  text-decoration: none; /* Removes underline */
 }
